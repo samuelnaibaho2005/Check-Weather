@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box ;
+}
+
+body{
+    background:#003267;
+    height: 100vh;
+    width: 100%;   
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 50%;
+    max-width: 500px;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px rgb(231, 227, 227);
+}
+
+.seacrh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px;
+    border-radius: 36px 0 0 36px;
+    height: 40px;
+    flex: 1;
+    font-size: 18px;
+}
+
+.search button{
+    font-size: 25px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 0 36px 36px 0;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    padding-right: 20px;
+}
+
+.cuaca img{
+    width: 70px;
+    height: 70px;
+}
+
+.cuaca .icon_cuaca{
+    margin-top: 20px;
+}
+
+.details .col img{
+    width: 50px;
+    height: 50px;
+}
+
+.cuaca{
+    display: none;
+}
+
+.cuaca h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.cuaca h3{
+    font-size: 80px;
+    font-weight: 350;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.side_left{
+    margin-right: 15px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.col .humidity p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: -1px;
+}
+
+.humidity, .wind, .location, .pressure{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.icon_cuaca{
+    animation: float 3s ease-in-out infinite;
+}
